@@ -1,0 +1,13 @@
+提供されたデータは、Garminデバイスから取得されたユーザーの特定日の活動と睡眠の記録を含んでいます。ここでの主なフィールドとその意味は以下の通りです：
+
+userProfilePK: ユーザーのプロフィールID。
+calendarDate: データが記録されたカレンダー日付。
+startTimestampGMTとendTimestampGMT: 活動の開始と終了時刻（グリニッジ標準時）。
+startTimestampLocalとendTimestampLocal: 活動の開始と終了時刻（ローカル時刻）。
+sleepStartTimestampGMTとsleepEndTimestampGMT: 睡眠の開始と終了時刻（グリニッジ標準時）。
+sleepStartTimestampLocalとsleepEndTimestampLocal: 睡眠の開始と終了時刻（ローカル時刻）。
+tomorrowSleepStartTimestampGMTとtomorrowSleepEndTimestampGMT: 翌日の睡眠の開始と終了時刻（グリニッジ標準時）。今回のデータでは空（None）です。
+averageSpO2, lowestSpO2, lastSevenDaysAvgSpO2, latestSpO2: 酸素飽和度(SpO2)に関するデータ。今回のデータでは空（None）です。
+latestSpO2TimestampGMTとlatestSpO2TimestampLocal: 最新のSpO2読み取りの時刻（それぞれGMTとローカル時刻）。今回のデータでは空（None）です。
+spO2ValueDescriptorsDTOList, spO2SingleValues, continuousReadingDTOList, spO2HourlyAverages: SpO2に関する追加データ。今回のデータでは空（None）です。
+このデータは、ユーザーの日々の活動、睡眠の質、および可能な場合は酸素飽和度のモニタリングに使用されます。提供されたデータセットでは、酸素飽和度に関連するデータは空ですが、これらは通常、ユーザーの健康状態をより詳細に理解するのに役立ちます。睡眠データは、睡眠の質やパターンを理解するのに特に重要です。
